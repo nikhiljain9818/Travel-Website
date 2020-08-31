@@ -22,12 +22,12 @@ ul li {
 }
 
 a {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     text-decoration: none;
 }
 
 p, li {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     margin-bottom: 0.5em;
     letter-spacing: 0.15em;
 }
@@ -41,7 +41,7 @@ h1, h2, h3 {
 /* ********************** utility class ************************** */
 
 .container {
-    max-width: 1200px;
+    max-width: 1000px;
     width: 90%;
     margin: 0 auto;
 }
@@ -92,6 +92,17 @@ h1, h2, h3 {
 .btn_primary:hover {
     background-color: #e63946;
     color: #f4f4f4;
+}
+
+.btn_secondary {
+    color: #e63946;
+    border: 2px solid #e63946;
+    border-radius: 2rem;
+}
+
+.btn_secondary:hover {
+    background-color: #e63946;
+    color: #fff;
 }
 
 
@@ -176,13 +187,15 @@ h2 {
 /* ***************** Showcase content *************** */
 
 .showcase {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('../img/showcase_background.jpg') no-repeat center center/cover;
     background-color: #dddddd;
     padding: 10rem 0;
 }
 
 .row {
-    height: 35rem;
-    border: 2px solid red;
+    height: 30rem;
+    background-color: #fff;
+    /* box-shadow: 0px 5px 10px #888784; */
 }
 
 .row1 {
@@ -198,7 +211,6 @@ h2 {
 }
 
 .row .text_box {
-    border: 4px solid blue;
     padding: 3rem;
 
 }
@@ -212,4 +224,57 @@ h2 {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+
+/* *************** Feature Section *************** */
+
+
+.features {
+    padding: 5rem 0;
+}
+
+.box_wrapper {
+    box-shadow: 6px 8px 20px 0px rgba(0, 0, 0, 0.568);
+}
+
+.box {
+    width: 33.333%;
+    height: 20rem;
+    float: left;
+    padding: 1.5rem;
+    text-align: center;
+
+}
+
+.box_1, .box_3 {
+    background-color: #263238;
+    color: #f4f4f4;
+}
+
+.box_2 {
+    background: linear-gradient(25deg, #d64c7f,#ee4758 50%);
+    color: white;
+}
+
+.box_wrapper::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* ********* Footer Section ******** */
+
+.footer {
+    background-color: #333333;
+    color: #fff;
+    text-align: center;
+}
+
+.footer .social_media_links i {
+    padding: 1rem 1.5rem;
+}
+
+.footer .social_media_links p{
+    margin: 0;
 }
