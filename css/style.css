@@ -105,6 +105,10 @@ h1, h2, h3 {
     color: #fff;
 }
 
+.bg_dark {
+    background-color: #263238;
+}
+
 
 
 
@@ -164,7 +168,7 @@ h2 {
     color: white;
 }
 
-/* ***************** Header content *************** */
+/* ***************** Home - Header content *************** */
 
 .header_content {
     position: absolute;
@@ -184,7 +188,7 @@ h2 {
     text-transform: uppercase;
 }
 
-/* ***************** Showcase content *************** */
+/* ***************** Home - Showcase content *************** */
 
 .showcase {
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('../img/showcase_background.jpg') no-repeat center center/cover;
@@ -227,7 +231,7 @@ h2 {
 }
 
 
-/* *************** Feature Section *************** */
+/* *************** Home - Feature Section *************** */
 
 
 .features {
@@ -263,7 +267,7 @@ h2 {
     clear: both;
 }
 
-/* ********* Footer Section ******** */
+/* ********* Home - Footer Section ******** */
 
 .footer {
     background-color: #333333;
@@ -277,4 +281,180 @@ h2 {
 
 .footer .social_media_links p{
     margin: 0;
+}
+
+
+
+
+
+/***************************  ABOUT PAGE *******************************/
+
+.about_content {
+    padding: 3rem 0;
+}
+
+.about_heading::after {
+    content: '';
+    display: block;
+    border-bottom: 6px solid #e63946;
+    width: 100%;
+}
+
+.main_points {
+    margin: 2rem 0;
+
+}
+
+.main_points::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.main_point_box {
+    display: block;
+    width: 50%;
+    float: left;
+}
+
+.main_points .main_point_box p::before {
+    content: "\2713";
+    color: #e63946;
+    font-weight: bold;
+    padding-right: 1rem;
+}
+
+.main_point {
+    /* border: 2px solid black; */
+    text-align: center;
+}
+
+/* ************* About - Stats ***************** */
+
+.stats_numbers {
+    /* background: linear-gradient(25deg, #d64c7f,#ee4758 50%); */
+    padding: 1rem;
+    text-align: center;
+    width: 25%;
+    float: left;
+}
+
+.about_stats::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.about_stats .stats_numbers span {
+    font-size: 2.5rem;
+    color: #e63946;
+    font-weight: bold;
+}
+
+/* ************* About - Contact ********** */
+
+.about_contact {
+    font-size: 2rem;
+    margin: 2rem 0rem;
+    border: 2px solid black;
+    background: linear-gradient(25deg, #d64c7f,#ee4758 50%);
+}
+
+.about_contact::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.about_contact p {
+    display: inline-block;
+    padding: 2rem 0 0 1rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+.about_contact a {
+    border: 4px solid #fff;
+    text-transform: uppercase;
+    float: right;
+    font-size: 2rem;
+    padding: 0.5rem 4rem;
+    margin: 1rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+
+
+/* ****************************** CONTACT PAGE ******************************** */
+
+.contact_form {
+    padding: 5rem 0rem;
+}
+
+/* .form_wrapper {
+    border: 5px solid red;
+} */
+
+.form_wrapper::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.company_address {
+    border: 4px dotted green;
+    width: 49%;
+    float: left;
+}
+
+.form {
+    width: 49%;
+    float: right;
+}
+
+.form_wrapper .form h2 {
+    font-size: 2.5rem;
+    margin: 0;
+    font-weight: 500;
+}
+
+.form_wrapper .form h2::after {
+    content: '';
+    display: block;
+    border-bottom: 4px solid #e63946;
+    width: 97%;
+
+}
+
+.contact_form form p {
+    padding: 1rem 0rem;
+}
+
+.contact_form form label{
+    display: block;
+}
+
+.contact_form form input {
+    display: block;
+    padding: 0.4rem;
+    width: 97%;
+    margin-bottom: 1rem;
+}
+
+.contact_form form textarea {
+    resize: none;
+}
+
+.contact_form form button {
+    font-size: 1.7rem;
+    padding: 0.5rem 2rem;
+    margin: 1rem 0 1rem 19rem;
+    color: #fff;
+    border: 1px solid #e63946;
+    background-color: #e63946;
+    box-shadow: 0 2px #fd7580;
+    cursor: pointer;
 }
